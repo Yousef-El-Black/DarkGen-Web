@@ -4,6 +4,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        updown: {
+          "0%, 100%": { transform: "translateY(-25px)" },
+          "50%": { transform: "translateY(25px)" },
+        },
+      },
+      animation: {
+        updown: "updown 5s ease-in-out infinite",
+      },
       colors: {
         LightPrimaryColor: "#1A73E8",
         LightSecondaryColor: "#34A853",
@@ -27,5 +36,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@designbycode/tailwindcss-text-stroke")],
 };

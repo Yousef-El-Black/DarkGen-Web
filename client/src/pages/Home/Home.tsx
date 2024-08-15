@@ -1,7 +1,11 @@
-import React from "react";
+import Hero from "../../components/Hero/Hero";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div className="Home bg-LightBackgroundColor dark:bg-DarkBackgroundColor">
+      <Hero />
+    </div>
+  );
 };
 
 export default Home;
