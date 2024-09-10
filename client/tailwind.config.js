@@ -9,9 +9,14 @@ module.exports = {
           "0%, 100%": { transform: "translateY(-25px)" },
           "50%": { transform: "translateY(25px)" },
         },
+        tape: {
+          "0%": { transform: "translateX(-100vw)" },
+          "100%": { transform: "translateX(-1vw)" },
+        },
       },
       animation: {
         updown: "updown 5s ease-in-out infinite",
+        tape: "tape 10s linear infinite",
       },
       colors: {
         LightPrimaryColor: "#1A73E8",
