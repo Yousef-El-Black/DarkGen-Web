@@ -47,3 +47,9 @@ span {
   font-weight: 500;
   font-style: normal;
 }
+
+.signature {
+  font-family: "Style Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,4 +1,5 @@
 import AboutUs from "../../components/AboutUs/AboutUs";
+import CEO from "../../components/CEO/CEO";
 import FAQ from "../../components/FAQ/FAQ";
 import Hero from "../../components/Hero/Hero";
 import Portfolio from "../../components/Portfolio/Portfolio";
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutUs />
       <Portfolio />
       <FAQ />
+      <CEO />
     </div>
   );
 };
