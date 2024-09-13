@@ -8,7 +8,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 const CEO = () => {
   return (
     <div className="ceo min-h-screen relative flex justify-center items-center">
-      <div className="container flex flex-row-reverse items-center">
+      <div className="container flex gap-10 flex-col md:flex-row-reverse items-center my-5">
         <div className="right flex justify-center items-center flex-col gap-5">
           <div className="image rounded-lg overflow-hidden w-[250px] aspect-square">
             <img
@@ -17,39 +17,56 @@ const CEO = () => {
               className="w-full h-full"
             />
           </div>
-          <h2 className="text-center">The Owner of DarkGen Web Agency</h2>
-          <ul className="flex justify-center items-center">
+          <h2 className="text-center text-LightTextColor dark:text-DarkTextColor">
+            The Owner of DarkGen Web Agency
+          </h2>
+          <ul className="flex gap-5 justify-center items-center flex-wrap text-LightTextColor dark:text-DarkTextColor">
             <Link to={"https://elblackdev.vercel.app/"}>
               <li>
-                <LanguageIcon />
+                <LanguageIcon
+                  fontSize={"large"}
+                  className="hover:text-LightPrimaryColor hover:dark:text-DarkPrimaryColor duration-300"
+                />
               </li>
             </Link>
             <Link to={"https://www.facebook.com/elblackdev"}>
               <li>
-                <FacebookIcon />
+                <FacebookIcon
+                  fontSize={"large"}
+                  className="hover:text-LightPrimaryColor hover:dark:text-DarkPrimaryColor duration-300"
+                />
               </li>
             </Link>
             <Link to={"https://www.instagram.com/yousefaboalata/"}>
               <li>
-                <InstagramIcon />
+                <InstagramIcon
+                  fontSize={"large"}
+                  className="hover:text-LightPrimaryColor hover:dark:text-DarkPrimaryColor duration-300"
+                />
               </li>
             </Link>
             <Link to={"https://wa.me/201003758787"}>
               <li>
-                <WhatsAppIcon />
+                <WhatsAppIcon
+                  fontSize={"large"}
+                  className="hover:text-LightPrimaryColor hover:dark:text-DarkPrimaryColor duration-300"
+                />
               </li>
             </Link>
             <Link to={"mailto:yousefelblackdev@gmail.com"}>
               <li>
-                <EmailIcon />
+                <EmailIcon
+                  fontSize={"large"}
+                  className="hover:text-LightPrimaryColor hover:dark:text-DarkPrimaryColor duration-300"
+                />
               </li>
             </Link>
           </ul>
         </div>
-        <div className="text indent-2 leading-8 flex flex-col gap-5">
+        <div className="text indent-2 leading-8 flex flex-col gap-5 md:border-r-2 pe-5 text-LightTextColor dark:text-DarkTextColor text-center md:text-start">
           <p>
             Hello, I'm <span>Yousef Aboalata</span>. Not just the local man
-            running around real estate indstry. But the Proud Owner of DarkGen
+            running around real estate industry. But the Proud Owner of DarkGen
             Web Agency. I've had the privilege of collaborating with more than
             99 Real Estate Companies. But here's the real kicker...
           </p>
@@ -67,7 +84,7 @@ const CEO = () => {
             website launch, my focus is on delivering the best results in the
             industry.
           </p>
-          <h6>That's not just a claim, it's my promise.</h6>
+          <h6 className="text-lg">That's not just a claim, it's my promise.</h6>
           <p>
             Let's connect and explore how we can transform your vision into a
             thriving reality, and ho I can keep my promise to the real estate
