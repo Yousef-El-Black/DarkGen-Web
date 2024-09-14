@@ -38,9 +38,9 @@ const AboutUs = () => {
           </motion.div>
           <div className="right flex-1 p-5 text-sm sm:text-lg text-LightTextColor dark:text-DarkTextColor">
             <motion.p
-              initial={{ x: 200, y: 200, opacity: 0 }}
-              transition={{ duration: 0.2 }}
+              initial={{ x: 50, y: 50, opacity: 0 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.2 }}
             >
               DarkGen Web is the right place to achive successfull Stories, We
               support Everyone want to work in real state field to make a lot of
