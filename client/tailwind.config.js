@@ -13,10 +13,15 @@ module.exports = {
           "0%": { transform: "translateX(-100vw)" },
           "100%": { transform: "translateX(-1vw)" },
         },
+        slide: {
+          "0%, 100%": { transform: "translate(0%, -50%)" },
+          "50%": { transform: "translate(calc(-100% + 100vw), -50%)" },
+        },
       },
       animation: {
         updown: "updown 5s ease-in-out infinite",
         tape: "tape 10s linear infinite",
+        slide: "slide 60s linear infinite",
       },
       colors: {
         LightPrimaryColor: "#1A73E8",

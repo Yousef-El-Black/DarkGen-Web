@@ -1,7 +1,7 @@
 const AboutUs = () => {
   return (
     <div className="AboutUs mb-5">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center py-5 text-center md:text-start">
           <div className="left flex-1 md:me-10 rounded-lg overflow-hidden">
             {/* FIXME: An Image have a House and DarkGen Web Sign on */}
