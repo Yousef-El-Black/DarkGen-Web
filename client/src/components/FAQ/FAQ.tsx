@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-
+import { motion } from "framer-motion";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
 const faqs = [
@@ -29,6 +29,38 @@ const FAQ = () => {
     (state: { theme: { dark: boolean } }) => state.theme
   );
 
+  const containerVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: { duration: 0.3, staggerChildren: 0.2 },
+    },
+  };
+
+  const rightVariants = {
+    initial: {
+      opacity: 0,
+      x: 200,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
+  const leftVariants = {
+    initial: {
+      opacity: 0,
+      x: -200,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
   return (
     <div>
       <div className="devider-top rotate-[180deg] w-full">
@@ -56,11 +88,17 @@ const FAQ = () => {
             FAQ
           </h2>
         </div>
-        <div className="content flex flex-col gap-5">
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={containerVariants}
+          className="content flex flex-col gap-5"
+        >
           {faqs.map(
             (faq: { question: string; answer: string }, index: number) => {
               return (
-                <div
+                <motion.div
+                  variants={index % 2 ? leftVariants : rightVariants}
                   className={`box w-full md:w-[80%] relative rounded-lg bg-LightBackgroundColor dark:bg-DarkBackgroundColor text-LightTextColor dark:text-DarkTextColor dark:shadow-lg shadow-LightBackgroundColor dark:shadow-DarkBackgroundColor ${
                     index % 2 ? "self-start" : "self-end"
                   }`}
@@ -73,11 +111,11 @@ const FAQ = () => {
                   <div className="answer p-5 text-center md:text-start">
                     {faq.answer}
                   </div>
-                </div>
+                </motion.div>
               );
             }
           )}
-        </div>
+        </motion.div>
       </div>
       <div className="devider-bottom w-full">
         <svg
