@@ -25,6 +25,7 @@
 
 * {
   transition: 0.25s;
+  scroll-behavior: smooth;
 }
 
 body {

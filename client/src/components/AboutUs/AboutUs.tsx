@@ -24,7 +24,7 @@ const AboutUs = () => {
 
   return (
     <div className="AboutUs mb-5">
-      <div className="container mx-auto">
+      <div className="container mx-auto" id="#aboutus">
         <div className="flex flex-col md:flex-row items-center py-5 text-center md:text-start">
           <motion.div
             initial={{ opacity: 0 }}
