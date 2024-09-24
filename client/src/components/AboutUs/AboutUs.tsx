@@ -34,7 +34,7 @@ const AboutUs = () => {
           >
             {/* FIXME: An Image have a House and DarkGen Web Sign on */}
             {/* <img src="/assets/images/dark-hero-shape.png" alt="" /> */}
-            <img src="/assets/images/about-1.png" alt="" />
+            <img loading="lazy" src="/assets/images/about-1.png" alt="" />
           </motion.div>
           <div className="right flex-1 p-5 text-sm sm:text-lg text-LightTextColor dark:text-DarkTextColor">
             <motion.p
@@ -84,7 +84,7 @@ const AboutUs = () => {
           >
             {/* FIXME: An Image have a Laptop opened on a Real State website with high Income $ */}
             {/* <img src="/assets/images/dark-hero-shape.png" alt="" /> */}
-            <img src="/assets/images/about-2.jpg" alt="" />
+            <img loading="lazy" src="/assets/images/about-2.jpg" alt="" />
           </motion.div>
         </div>
       </div>
