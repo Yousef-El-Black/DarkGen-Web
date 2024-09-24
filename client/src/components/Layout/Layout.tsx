@@ -10,18 +10,14 @@ const Layout = () => {
   useEffect(() => {
     setIsLoading(false);
   }, []);
-
-  if (!isLoading) {
-    return (
-      <>
-        <Header />
-        <Outlet />
-        <Footer />
-      </>
-    );
-  } else {
-    return <Preloader />;
-  }
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+      <Preloader isLoading={isLoading} />
+    </>
+  );
 };
 
 export default Layout;
