@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Logo = ({ full }: { full?: boolean }) => {
   const { dark } = useSelector(
@@ -6,7 +7,7 @@ const Logo = ({ full }: { full?: boolean }) => {
   );
 
   return (
-    <div className={`logo ${!full ? "w-auto" : "w-full"}`}>
+    <Link className={`logo ${!full ? "w-auto" : "w-full"}`} to={"/"}>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +194,7 @@ m18 -107 c13 -12 -15 -33 -44 -33 -29 0 -44 13 -34 30 7 11 68 14 78 3z"
           />
         </g>
       </svg>
-    </div>
+    </Link>
   );
 };
 

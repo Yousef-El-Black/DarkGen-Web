@@ -22,7 +22,7 @@ const CEO = () => {
             The Owner of DarkGen Web Agency
           </h2>
           <ul className="flex gap-5 justify-center items-center flex-wrap text-LightTextColor dark:text-DarkTextColor">
-            <Link to={"https://elblackdev.vercel.app/"}>
+            <Link to={"https://elblackdev.vercel.app/"} target="_blank">
               <li>
                 <LanguageIcon
                   fontSize={"large"}
@@ -30,7 +30,7 @@ const CEO = () => {
                 />
               </li>
             </Link>
-            <Link to={"https://www.facebook.com/elblackdev"}>
+            <Link to={"https://www.facebook.com/elblackdev"} target="_blank">
               <li>
                 <FacebookIcon
                   fontSize={"large"}
@@ -38,7 +38,10 @@ const CEO = () => {
                 />
               </li>
             </Link>
-            <Link to={"https://www.instagram.com/yousefaboalata/"}>
+            <Link
+              to={"https://www.instagram.com/yousefaboalata/"}
+              target="_blank"
+            >
               <li>
                 <InstagramIcon
                   fontSize={"large"}
@@ -46,7 +49,7 @@ const CEO = () => {
                 />
               </li>
             </Link>
-            <Link to={"https://wa.me/201003758787"}>
+            <Link to={"https://wa.me/201003758787"} target="_blank">
               <li>
                 <WhatsAppIcon
                   fontSize={"large"}
@@ -54,7 +57,7 @@ const CEO = () => {
                 />
               </li>
             </Link>
-            <Link to={"mailto:yousefelblackdev@gmail.com"}>
+            <Link to={"mailto:yousefelblackdev@gmail.com"} target="_blank">
               <li>
                 <EmailIcon
                   fontSize={"large"}
