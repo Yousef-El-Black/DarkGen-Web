@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Services from "./pages/Services/Services";
 import PortfolioPage from "./pages/Portfolio/Portfolio";
 import Copyright from "./pages/Copyright/Copyright";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       { path: "/services", element: <Services /> },
       { path: "/portfolio", element: <PortfolioPage /> },
       { path: "/copyright", element: <Copyright /> },
+      { path: "/contactus", element: <ContactUs /> },
     ],
   },
   { path: "*", element: <NotFound /> },

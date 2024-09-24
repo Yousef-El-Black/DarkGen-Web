@@ -3,7 +3,7 @@ import "./preloader.css";
 const Preloader = ({ isLoading }: { isLoading: boolean }) => {
   return (
     <div
-      className={`w-screen bg-DarkBackgroundColor flex justify-center items-center duration-1000 delay-1000 absolute top-0 left-0 z-[999] h-screen ${
+      className={`w-screen bg-DarkBackgroundColor flex justify-center items-center duration-1000 delay-1000 fixed top-0 left-0 z-[999] h-screen ${
         !isLoading ? "translate-y-[-100%]" : "translate-y-0"
       }`}
     >
