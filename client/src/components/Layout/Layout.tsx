@@ -11,7 +11,7 @@ const Layout = () => {
     setIsLoading(false);
   }, []);
 
-  if (isLoading) {
+  if (!isLoading) {
     return (
       <>
         <Header />
